@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 In this short piece work I would like to explore how to access Spotify data with the help of **spotifyr-package** and which various interesting things can be done with it. The following explorative analysis is of relevance for music industry professionals, music analysts as well as music lovers.
 
 ## Short summary
-The article is structured as follows: firstly, the basic packages are downloaded and Spotify data is accessed, then the explorative analysis is focused on the visualization of some music features and lyrics based on Lorde’s music.
+The article is structured as follows: firstly, the basic packages are downloaded and Spotify data is accessed, then the explorative analysis is focused on the visualization of some music features and lyrics based on Lorde’s music. 
 
 ## Downloading packages
 
-To access Spotify API, additional packages need to be downloaded. Notice that package **spotifyr** has been removed from CRAN recently, therefore, here is the alternative way of downloading it.
+To access Spotify API, additional packages need to be downloaded. Notice that package **spotifyr** has been removed from CRAN recently, therefore, here is the alternative way of downloading this package. 
 ```{r, message=FALSE, warning=FALSE}
 library(devtools)
 devtools::install_github('charlie86/spotifyr')
