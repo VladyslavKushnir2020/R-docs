@@ -15,7 +15,7 @@ The article is structured as follows: firstly, the basic packages are downloaded
 ## Downloading packages
 
 To access Spotify API, additional packages need to be downloaded. Notice that package **spotifyr** has been removed from CRAN recently, therefore, here is the alternative way of downloading it.
-```{r, warning=FALSE, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(devtools)
 devtools::install_github('charlie86/spotifyr')
 library(spotifyr)
@@ -40,7 +40,7 @@ access_token <- get_spotify_access_token()
 ## Explorative data analysis 
 
 Let’s carry out a quick test to see if the set-up has worked by looking at **key_mode** of the artist **Lorde**, who, according to Forbes, *“became a superstar thanks to Spotify”*. According to Spotify for Artists, *“key denotes the major or minor scale in which a piece of music operates, and thus, the notes that belong in it. Perhaps the most important distinction to make between major and minor keys is that major keys generally sound upbeat, and minor keys generally have a melancholy tinge to them”.*
-```{r}
+```{r include=FALSE}
 lorde <- get_artist_audio_features('Lorde')
 lorde %>%
   count(key_mode, sort = TRUE) %>%
